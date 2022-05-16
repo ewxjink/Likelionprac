@@ -29,15 +29,19 @@ print("전화번호 value 얻기 : ", Dic.get("phonenumber"))
 print("주소 value 얻기 : ", Dic.get("address"))
 
 # 존재하지 않는 "grade" Key 가져오기 -- get()
-
+print("존재하지 않는 grade Key 가져오기 : ", Dic.get("grade"))
 
 # default 값 "A" 설정하기 -- get()
-
+print("존재하지 않는 grade Key 가져오기 : ", Dic. get("grade", "A"))
 
 # Key 가 딕셔너리에 존재하는지 확인하기 -- in
-
-
+print("이름 Key 확인하기 : ", "age" in Dic)
+print("나이 Key 확인하기 : ", "age" in Dic)
+print("전화번호 Key 확인하기 : ", "phonenumber" in Dic)
+print("주소 Key 확인하기 : ", "address" in Dic)
 
 
 
 # Key 와 Value의 쌍을 모두 지우기 -- clear
+Dic.clear()
+print(Dic)
